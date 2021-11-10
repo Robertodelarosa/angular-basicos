@@ -13,14 +13,7 @@ export class MainPageComponent {
     { nombre: 'Vegeta', poder: 7500 }
   ];
   nuevo: Personaje = {
-    nombre: '',
-    poder: 0
-  }
-
-  agregar() {
-    if (this.nuevo.nombre.trim().length === 0) return;
-    this.personajes.push(this.nuevo);
-    console.log(this.nuevo);
-    this.nuevo = { nombre: '', poder: 0 };
+    nombre: 'Trunks',
+    poder: 1000
   }
 }
