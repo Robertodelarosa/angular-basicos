@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 
 import { Personaje } from '../interfaces/dbz.interface';
 
@@ -15,5 +15,9 @@ export class MainPageComponent {
   nuevo: Personaje = {
     nombre: 'Trunks',
     poder: 1000
+  }
+  agregarNuevoPersonaje(nuevoPersonaje: Personaje) {
+    this.personajes.push(nuevoPersonaje)
+    console.log(this.personajes);
   }
 }
